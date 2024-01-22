@@ -1,4 +1,4 @@
-# Arduino Power Controller with ASCOM Switch Driver
+# Arduino Power Controller with ASCOM Switch Driver 
 
 ![Arduino Power Controller][image]
 
@@ -22,7 +22,7 @@ This serves as a base implementation that can be extended to build other drivers
 
 We have tested the unit while switching 12 volt power supplies. The limitations on voltage and current will depend on the relay module used. Commonly available modules have relays rated for up to 10 Amps and up to 250 volts AC. However, switching mains voltages and/or high current loads can be hazardous. A simple mistake can result in destruction of equipment, fire, electrocution and death. **_Therefore we cannot endorse the use of this technology for switching high voltage or high current loads_**. We suggest using the module only to switch low voltage (less than 25 volts) and low current (less than 1 Amp) DC power where the consequences of a mistake are more manageable. If higher voltages and currents need to be switched, then the use of contactors and/or solid state relays (SSRs) should be investigated. The author has used this technique quite successfully to control 12v accessories for over 2 years at the time of writing.
 
-The project uses cheap, commonly available modules to create a computer controlled power switch. We used an Arduino UNO R3, available for as little as £5, and an 8-port relay module obtained from eBay, also costing around £5. The only other item required is a 10-way Dupont style Male-to-Female jumper cable to connect up the relay module. A 5 volt Arduino UNO should be capable of driving the relays directly from the USB power, but a 3.3 volt board would probably need additional level shifting buffers.
+The project uses cheap, commonly available modules to create a computer controlled power switch. We used an Arduino UNO R3, available for as little as Â£5, and an 8-port relay module obtained from eBay, also costing around Â£5. The only other item required is a 10-way Dupont style Male-to-Female jumper cable to connect up the relay module. A 5 volt Arduino UNO should be capable of driving the relays directly from the USB power, but a 3.3 volt board would probably need additional level shifting buffers.
 
 Note that the Arduino is not capable of powering your equipment directly and it should never be directly connected to the power supply being switched. The output side of the relays must remain completely isolated from the Arduino and the USB connection. The observatory equipment itself should be powered using a separate power supply designed for the purpose.
 
@@ -51,7 +51,7 @@ In particular:
 
 ## Installation
 
-<button>[Download »][download]</button>
+<button>[Download Â»][download]</button>
 
 The installer can be downloaded from [GitHub][download]. The installer has a minimal user interface but is fully functional. Upgrades can be installed 'on top of' existing versions and we expect that settings will be preserved in that situation.
 
